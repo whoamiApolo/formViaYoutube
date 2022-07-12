@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body, button, input, select, textarea {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+:root {
+  --primary-border: rgb(186, 83, 49);
+  --primary-fontColor: rgb(114, 114, 114);
+  --primary-fonte: #ffffff;
+}
+
+body {
+  background-image: url(/assets/imgBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin: 100px auto 0;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(24, 24, 24);
+  border-radius: 1rem;
+  transition: all 0.3s;
+  border: none;
+}
+
+.container:hover {
+  /* border: var(--primary-border) 1px solid; */
+  box-shadow: 0 0 1em var(--primary-border);
+}
+
+body .container h3 {
+  color: var(--primary-fonte);
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+body .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+body .container form label {
+  color: var(--primary-fontColor);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+body .container form label:hover {
+  color: var(--primary-fonte);
+}
+
+body .container form input[type='text'] {
+  height: 50px;
+  width: 100%;
+  border: none;
+  color: var(--primary-fonte);
+  background-color: rgb(24, 24, 24);
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body .container form input[type='text']:hover {
+  border-bottom: 1px solid var(--primary-border);
+  color: var(--primary-fonte);
+}
+
+body .container form input::placeholder {
+  align-items: center;
+}
+
+body .container form .inputContainer input[type='submit'] {
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  color: var(--primary-fontColor);
+  background-color: rgb(24, 24, 24);
+  font-weight: 700;
+  margin: 15px 0 20px;
+  transition: all 0.3s;
+}
+
+body .container form .inputContainer input[type='submit']:hover {
+  border-bottom: 1px solid var(--primary-border);
+  cursor: pointer;
+  color: var(--primary-fonte);
+}
+
+svg {
+  color: var(--primary-fontColor);
+  position: absolute;
+  margin-bottom: 100px;
+  /* top: 367px;
+  left: 680px; */
+  right: 55px;
+  top: calc(50% - 12px);
+}
+
+svg:hover {
+  color: var(--primary-fonte);
+}
+
+body .container form .inputContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+}

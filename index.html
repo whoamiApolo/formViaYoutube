@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h3>Top Músicas</h3>
+    <form action="https://music.youtube.com/search" method="get">
+
+      <label for="q">Pesquise as melhores músicas e playlists</label>
+      <input type="text" id="q" name="q" maxlength="32" placeholder="Ex.: Top Brasil, lo-fi, entre outros sucessos" required/>
+      <div class="inputContainer">
+        <input type="submit" value="Buscar" />
+        <i href="google.com.br" data-feather="search"></i>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
